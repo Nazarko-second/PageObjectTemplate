@@ -15,4 +15,14 @@ public class loginSuccess extends baseTest {
                 .typePassword("qweqweqwe")
                 .clickLoginButton();
     }
+
+    @Test
+    void testLoginSuccess2() {
+        MainPage mainpage = new MainPage(driver);
+        driver.get("https://elitecme.com");
+        LoginPage loginPage = mainpage.clickLoginButton();
+        loginPage.typeUsername("tr@tr.com")
+                .typePassword("qweqweqwe")
+                .clickLoginButton();
+    }
 }
